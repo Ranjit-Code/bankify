@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="navigation">
+		<ul>
+			<li>
+				<form name="frm" action="Dashboard">
+					<input id="navButton" type="submit" value="DASHBOARD" name="btn" />
+				</form>
+			</li>
+			<li><a href="createAccount.jsp">CREATE</a></li>
+			<li><a href="DepositAmount.jsp">DEPOSIT</a></li>
+			<li><a href="WithdrawAmount.jsp">WITHDRAW</a></li>
+			<li><a href="Transfer.jsp">TRANSFER</a></li>
+			<li>
+				<form name="frm" action="Profile" method="post">
+					<input id="navButton" type="submit" value="PROFILE" name="profbtn"/>
+				</form>
+			</li>
+			<li>
+				<div class="dropdown">
+					<button class="dropbtn">
+						${usr_name} <i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<ul>
+							<li>
+								<form name="frm" action="Signout" method="post">
+									<input id="navButton" type="submit" value="Signout"
+										name="subbtn" />
+								</form>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
